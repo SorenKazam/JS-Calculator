@@ -19,6 +19,7 @@ body {
     min-height: 100vh;
     grid-template-columns: repeat(4, 100px);
     grid-template-rows: minmax(120px, auto)repeat(5, 100px);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .calculator-grid > button {
@@ -30,7 +31,7 @@ body {
 }
 
 .calculator-grid > button:hover {
-    background-color: rgba(225, 225, 255, .9);
+    background-color: rgba(225, 225, 255, .1);
 }
 
 .span-two {
@@ -57,4 +58,18 @@ body {
 .output .current-operand {
     color: white;
     font-size: 2.5rem;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-flow: column;
+    color: black;
+    justify-content: space-around;
+}
+
+.footer a {
+    color: blue;
+    text-decoration: none;
 }
